@@ -35,10 +35,9 @@ The classification objective is deliberately postponed: collect broadly first, t
 - Avoid bias toward a small subset of VLN methods or benchmarks.
 - Do not assume a predefined taxonomy before collection.
 - Derive the final taxonomy only after broad collection.
-- Require the formal taxonomy to be a hierarchical tree:
-  - one consistent splitting criterion at each sibling level
-  - mutually exclusive subcategories within each split
-  - recursive subdivision using the same rule discipline
+- Prefer a clean hierarchical primary taxonomy when it is scientifically defensible.
+- Allow cross-cutting relationships when the literature genuinely requires them.
+- Aim for categorization that is as explicit, consistent, and scientifically reasonable as possible.
 - Do not start collection until this plan is approved.
 
 ## Deliverables
@@ -214,23 +213,25 @@ Objective:
 Main workflow:
 - `literature-reviewer`
 - ARIS-style `research-review`
-- `critic` if the proposed tree is inconsistent
+- `critic` if the proposed structure is inconsistent or scientifically weak
 
 Actions:
 - analyze how the collected papers naturally partition
-- propose one root-level splitting criterion only
-- require root-level categories to be:
-  - mutually exclusive
-  - collectively broad enough to cover the corpus
-- for each child node, continue subdivision using one consistent criterion at that level
-- reject mixed-axis trees where sibling categories are based on different logics
-- document unresolved edge cases and multi-label tensions separately rather than breaking the tree rule
+- propose the cleanest primary organizing logic that fits the corpus
+- prefer root-level categories with explicit logic and minimal ambiguity
+- keep sibling categories mutually exclusive where that improves clarity without distorting the literature
+- where overlap is intrinsic to the field, document it explicitly rather than forcing false exclusivity
+- if a pure tree is too distortive, allow:
+  - a primary taxonomy for the main narrative
+  - auxiliary cross-cutting dimensions as metadata or secondary analytical views
+- reject arbitrary mixed grouping that lacks a clear scientific rationale
+- document edge cases, overlapping regions, and multi-label tensions explicitly
 
 Output:
 - `docs/VLN_SURVEY_TAXONOMY.md`
 
 Quality gate:
-- the taxonomy forms a valid hierarchical tree rather than a loose matrix of dimensions
+- the taxonomy is scientifically coherent, explicit about its organizing logic, and honest about any necessary overlap
 
 ### Stage 6: Quality ranking without exclusion bias
 
@@ -251,7 +252,7 @@ Actions:
 - separate:
   - coverage inclusion
   - high-priority reading
-- avoid dropping lower-citation but structurally important papers if they define a subcategory in the induced tree
+- avoid dropping lower-citation but structurally important papers if they define an important part of the induced structure
 
 Output:
 - quality annotations inside `references/vln-survey-metadata.csv`
@@ -271,9 +272,9 @@ Main workflow:
 - `verifier`
 
 Actions:
-- count papers across the induced tree
+- count papers across the induced primary taxonomy
 - identify overrepresented and underrepresented branches
-- inspect whether the final tree itself is introducing distortion
+- inspect whether the final taxonomy itself is introducing distortion
 - run targeted backfill searches if needed
 - verify every title
 - verify every first arXiv submission date
@@ -311,18 +312,19 @@ Exclude or mark separately:
 
 The taxonomy must be induced from the collected corpus rather than imposed before collection.
 
-Tree requirements:
-- use one consistent criterion for each sibling partition
-- require sibling categories to be mutually exclusive
-- continue recursively in hierarchical form
-- if a paper has cross-cutting properties, record those as metadata tags rather than breaking the tree
+Preferred principles:
+- use the clearest primary organizing logic available
+- keep sibling categories mutually exclusive when that is scientifically reasonable
+- preserve cross-cutting relationships when overlap is genuinely part of the field
+- do not force a pure tree if doing so would misrepresent the literature
 
 This means:
 - do not begin with a predefined multi-axis taxonomy
-- do not mix benchmark, method, supervision, and embodiment logic inside the same sibling split
 - do not force early classification before broad collection is complete
+- do not mix unrelated grouping logic without explaining why
+- use metadata tags and secondary views when they represent the field better than a rigid single tree
 
-Parallel analytical views may still exist later as metadata tables, but the formal taxonomy should be a tree.
+The idealized target is a clean hierarchy where possible, but the practical target is a scientifically defensible taxonomy that is explicit about both structure and overlap.
 
 ## Source Provenance Policy
 
@@ -362,7 +364,7 @@ This prevents high-citation preference from collapsing the scope.
 - Coverage is audited after taxonomy induction.
 - The collection process includes targeted backfill for under-covered branches.
 - High-quality papers are prioritized, but not at the cost of structural coverage.
-- The formal taxonomy is a hierarchical tree with mutually exclusive sibling categories at each split.
+- The formal taxonomy is scientifically defensible and explicit about any necessary overlap or cross-cutting relations.
 
 ## Risks and Mitigations
 
@@ -394,9 +396,9 @@ Mitigation:
 ### Risk 5: invalid taxonomy caused by mixed criteria
 
 Mitigation:
-- require one splitting criterion per tree level
-- reject sibling groups that mix incompatible classification logic
-- store cross-cutting properties as metadata rather than as tree edges
+- prefer one clear organizing logic in the primary taxonomy
+- reject sibling groups that mix incompatible classification logic without justification
+- preserve real overlap explicitly instead of forcing false exclusivity
 
 ### Risk 6: metadata inconsistency for arXiv dates
 
@@ -421,7 +423,7 @@ At completion:
 - verify chronological sorting
 - verify provenance coverage
 - verify taxonomy branch coverage
-- verify that each taxonomy split uses a single consistent criterion
+- verify that the final taxonomy has a clear rationale and handles overlap explicitly where needed
 
 ## Recommended Skill and Agent Routing
 
