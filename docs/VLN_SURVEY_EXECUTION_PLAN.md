@@ -13,6 +13,8 @@ Build a comprehensive, low-bias VLN literature investigation that serves two pur
 
 The primary execution target of this phase is a formal literature database of 100+ VLN-related papers, ordered by first arXiv submission date from newest to oldest, with strong coverage across all major sub-directions.
 
+The classification objective is deliberately postponed: collect broadly first, then derive the taxonomy from the collected corpus rather than imposing one in advance.
+
 ## Requirements Summary
 
 - Start from existing VLN and embodied navigation survey papers.
@@ -31,6 +33,12 @@ The primary execution target of this phase is a formal literature database of 10
   - open-source ecosystem quality
   - maintained project pages
 - Avoid bias toward a small subset of VLN methods or benchmarks.
+- Do not assume a predefined taxonomy before collection.
+- Derive the final taxonomy only after broad collection.
+- Require the formal taxonomy to be a hierarchical tree:
+  - one consistent splitting criterion at each sibling level
+  - mutually exclusive subcategories within each split
+  - recursive subdivision using the same rule discipline
 - Do not start collection until this plan is approved.
 
 ## Deliverables
@@ -47,7 +55,7 @@ The primary execution target of this phase is a formal literature database of 10
    - canonical machine-readable paper table
 
 3. `docs/VLN_SURVEY_TAXONOMY.md`
-   - taxonomy distilled from survey-of-surveys analysis
+   - taxonomy derived from the collected corpus after coverage stabilizes
 
 4. `docs/VLN_SURVEY_OF_SURVEYS.md`
    - structured analysis of existing survey papers
@@ -108,40 +116,10 @@ Output:
 Quality gate:
 - do not move on until the survey set is broad enough to expose multiple competing ways of structuring the field
 
-### Stage 2: Taxonomy extraction and synthesis
+### Stage 2: Citation-seeded core expansion
 
 Objective:
-- derive a robust taxonomy from prior surveys before expanding the paper list aggressively
-
-Main workflow:
-- `literature-reviewer`
-- ARIS-style `research-review`
-- `writer` for synthesis cleanup only after the technical structure is stable
-
-Actions:
-- compare survey taxonomies along multiple axes:
-  - task formulation
-  - environment type
-  - instruction modality
-  - embodiment assumptions
-  - supervision level
-  - perception and memory design
-  - planning and policy structure
-  - evaluation setting
-  - benchmark lineage
-- identify where prior surveys disagree
-- produce a merged taxonomy that is broad enough for coverage control
-
-Output:
-- first stable version of `docs/VLN_SURVEY_TAXONOMY.md`
-
-Quality gate:
-- each major VLN sub-direction must have a clear bucket in the taxonomy
-
-### Stage 3: Citation-seeded core expansion
-
-Objective:
-- use survey references as the initial high-signal seed set
+- use survey references as the initial high-signal seed set without freezing a taxonomy too early
 
 Main workflow:
 - `literature-reviewer`
@@ -154,7 +132,8 @@ Actions:
   - which survey cited it
   - how many surveys cited it
   - whether it appears as a foundational, benchmark, method, or systems paper
-- assign preliminary taxonomy labels
+- record lightweight descriptive notes only when needed for later classification
+- do not force papers into a fixed taxonomy at this stage
 
 Output:
 - first population of `references/vln-survey-metadata.csv`
@@ -163,7 +142,7 @@ Output:
 Quality gate:
 - the seed set must cover classic and modern papers, not only recent popular models
 
-### Stage 4: Multi-source frontier expansion
+### Stage 3: Multi-source frontier expansion
 
 Objective:
 - extend beyond survey citations to maximize coverage and reduce inherited bias from prior surveys
@@ -182,6 +161,8 @@ Search policy:
 - build multiple query families instead of a single keyword list
 - include both direct VLN and neighboring embodied navigation wording
 - include task, benchmark, and method-centric phrases
+- add papers without committing to a final taxonomy
+- preserve source provenance for every new addition
 
 Query families:
 - direct VLN terms
@@ -197,9 +178,61 @@ Output:
 - expanded paper inventory
 
 Quality gate:
-- no major taxonomy branch should depend on only one source channel
+- no major coverage frontier should depend on only one source channel
 
-### Stage 5: Quality ranking without exclusion bias
+### Stage 4: Coverage-first corpus stabilization
+
+Objective:
+- stabilize the corpus before formal taxonomy design
+
+Main workflow:
+- `literature-reviewer`
+- ARIS-style `research-review`
+
+Actions:
+- inspect the growing corpus for obvious blind spots
+- check whether the collection is skewed toward:
+  - only recent papers
+  - only indoor VLN
+  - only popular benchmarks
+  - only papers with public code
+  - only survey-cited methods
+- run targeted backfill searches where gaps are visible
+- only freeze the corpus when coverage is broad enough for taxonomy induction
+
+Output:
+- stabilized pre-taxonomy corpus
+
+Quality gate:
+- the paper inventory is broad enough to support taxonomy induction without obvious search-path bias
+
+### Stage 5: Post-collection taxonomy induction
+
+Objective:
+- derive the taxonomy from the collected corpus after coverage stabilizes
+
+Main workflow:
+- `literature-reviewer`
+- ARIS-style `research-review`
+- `critic` if the proposed tree is inconsistent
+
+Actions:
+- analyze how the collected papers naturally partition
+- propose one root-level splitting criterion only
+- require root-level categories to be:
+  - mutually exclusive
+  - collectively broad enough to cover the corpus
+- for each child node, continue subdivision using one consistent criterion at that level
+- reject mixed-axis trees where sibling categories are based on different logics
+- document unresolved edge cases and multi-label tensions separately rather than breaking the tree rule
+
+Output:
+- `docs/VLN_SURVEY_TAXONOMY.md`
+
+Quality gate:
+- the taxonomy forms a valid hierarchical tree rather than a loose matrix of dimensions
+
+### Stage 6: Quality ranking without exclusion bias
 
 Objective:
 - prioritize high-quality papers while preserving broad field coverage
@@ -218,7 +251,7 @@ Actions:
 - separate:
   - coverage inclusion
   - high-priority reading
-- avoid dropping lower-citation but structurally important papers if they define a sub-direction
+- avoid dropping lower-citation but structurally important papers if they define a subcategory in the induced tree
 
 Output:
 - quality annotations inside `references/vln-survey-metadata.csv`
@@ -226,44 +259,22 @@ Output:
 Quality gate:
 - strong papers should be prioritized, but the final list must still represent the field rather than just the citation elite
 
-### Stage 6: Coverage and bias audit
+### Stage 7: Coverage and bias audit plus finalization
 
 Objective:
-- explicitly test whether the collected set is balanced across the taxonomy
+- verify that the final corpus and induced taxonomy are not structurally biased, then freeze the formal deliverable list
 
 Main workflow:
 - `literature-reviewer`
 - ARIS-style `research-review`
-- `critic` if the field coverage looks skewed
-
-Actions:
-- count papers per taxonomy branch
-- identify overrepresented branches
-- identify underrepresented branches
-- inspect whether the search process is biased toward:
-  - only high-citation classics
-  - only recent LLM-era papers
-  - only indoor benchmarks
-  - only a narrow benchmark ecosystem
-  - only papers with code
-- run targeted backfill searches for weak branches
-
-Output:
-- `docs/VLN_COVERAGE_AUDIT.md`
-
-Quality gate:
-- proceed only when the paper set has acceptable branch coverage and the missing zones are explicitly documented
-
-### Stage 7: Finalization of the formal paper list
-
-Objective:
-- freeze the formal deliverable list and make it publication-ready
-
-Main workflow:
 - `writer`
 - `verifier`
 
 Actions:
+- count papers across the induced tree
+- identify overrepresented and underrepresented branches
+- inspect whether the final tree itself is introducing distortion
+- run targeted backfill searches if needed
 - verify every title
 - verify every first arXiv submission date
 - sort reverse chronologically by first arXiv submission date
@@ -271,6 +282,7 @@ Actions:
 - keep machine-readable and human-readable lists synchronized
 
 Output:
+- `docs/VLN_COVERAGE_AUDIT.md`
 - final `references/vln-survey-paper-list.md`
 - final `references/vln-survey-metadata.csv`
 
@@ -278,6 +290,7 @@ Quality gate:
 - 100+ papers
 - ordering verified
 - metadata spot-checked
+- coverage gaps explicitly documented
 
 ## Inclusion Policy
 
@@ -296,17 +309,20 @@ Exclude or mark separately:
 
 ## Taxonomy Policy
 
-The taxonomy should not assume one dominant lens. It should support parallel views.
+The taxonomy must be induced from the collected corpus rather than imposed before collection.
 
-Required taxonomy views:
-- chronological view
-- task-setting view
-- method-family view
-- supervision and data view
-- benchmark and evaluation view
-- embodiment and deployment view
+Tree requirements:
+- use one consistent criterion for each sibling partition
+- require sibling categories to be mutually exclusive
+- continue recursively in hierarchical form
+- if a paper has cross-cutting properties, record those as metadata tags rather than breaking the tree
 
-This is necessary to avoid a paper list that overfits one survey logic.
+This means:
+- do not begin with a predefined multi-axis taxonomy
+- do not mix benchmark, method, supervision, and embodiment logic inside the same sibling split
+- do not force early classification before broad collection is complete
+
+Parallel analytical views may still exist later as metadata tables, but the formal taxonomy should be a tree.
 
 ## Source Provenance Policy
 
@@ -338,14 +354,15 @@ This prevents high-citation preference from collapsing the scope.
 
 - A survey-first plan exists before any collection begins.
 - Existing VLN and embodied navigation surveys are analyzed before broad search starts.
-- The taxonomy is derived before the paper list becomes large.
+- The taxonomy is derived after the corpus is broad enough, not before.
 - The final paper database contains at least 100 papers.
 - The final list contains title and first arXiv submission date for each paper.
 - The final list is sorted from newest to oldest by first arXiv submission date.
 - Source provenance exists for every paper.
-- Coverage is audited against an explicit taxonomy.
+- Coverage is audited after taxonomy induction.
 - The collection process includes targeted backfill for under-covered branches.
 - High-quality papers are prioritized, but not at the cost of structural coverage.
+- The formal taxonomy is a hierarchical tree with mutually exclusive sibling categories at each split.
 
 ## Risks and Mitigations
 
@@ -353,14 +370,14 @@ This prevents high-citation preference from collapsing the scope.
 
 Mitigation:
 - treat surveys as seeds, not as the whole field
-- force Stage 4 multi-source expansion
-- run Stage 6 coverage audit
+- force Stage 3 multi-source expansion
+- run Stage 7 coverage audit
 
 ### Risk 2: overconcentration on popular benchmarks
 
 Mitigation:
-- taxonomy must include benchmark lineage explicitly
-- run backfill searches centered on underrepresented settings
+- avoid benchmark-led classification too early
+- run backfill searches centered on underrepresented settings before taxonomy induction is frozen
 
 ### Risk 3: recent-paper bias
 
@@ -374,7 +391,14 @@ Mitigation:
 - use quality ranking only after inclusion
 - preserve lower-citation but structurally important papers
 
-### Risk 5: metadata inconsistency for arXiv dates
+### Risk 5: invalid taxonomy caused by mixed criteria
+
+Mitigation:
+- require one splitting criterion per tree level
+- reject sibling groups that mix incompatible classification logic
+- store cross-cutting properties as metadata rather than as tree edges
+
+### Risk 6: metadata inconsistency for arXiv dates
 
 Mitigation:
 - define one canonical rule: first arXiv submission date
@@ -388,15 +412,16 @@ Before execution begins:
 
 During execution:
 - checkpoint after Stage 1 with the survey-of-surveys set
-- checkpoint after Stage 2 with the taxonomy
-- checkpoint after Stage 4 when the inventory reaches roughly 60 to 80 papers
-- checkpoint after Stage 6 before freezing the final 100+ list
+- checkpoint after Stage 3 or Stage 4 when the inventory reaches roughly 60 to 80 papers
+- checkpoint after Stage 5 with the induced taxonomy
+- checkpoint after Stage 7 before freezing the final 100+ list
 
 At completion:
 - verify count >= 100
 - verify chronological sorting
 - verify provenance coverage
 - verify taxonomy branch coverage
+- verify that each taxonomy split uses a single consistent criterion
 
 ## Recommended Skill and Agent Routing
 
@@ -421,10 +446,10 @@ Suggested role split when execution starts:
 ## Recommended Execution Order After Approval
 
 1. execute Stage 1 and produce the survey-of-surveys note
-2. execute Stage 2 and freeze the first taxonomy
-3. execute Stage 3 and Stage 4 to build the inventory
-4. execute Stage 5 and Stage 6 to audit quality and coverage
-5. execute Stage 7 to freeze the formal paper list
+2. execute Stage 2 through Stage 4 to build and stabilize the inventory
+3. execute Stage 5 to induce the taxonomy from the corpus
+4. execute Stage 6 to prioritize quality without shrinking coverage
+5. execute Stage 7 to audit and freeze the formal paper list
 
 ## Explicit Non-Goals for This Phase
 
