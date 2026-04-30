@@ -1,0 +1,9 @@
+title,first_submission_date,source_tag,source_detail,entry_type,trust_note
+"Vision-Language Navigation: A Survey and Taxonomy",2021-08-26,survey-citation,"arXiv survey seed",survey,"trusted"
+"Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions",2022-03-22,survey-citation,"ACL/arXiv survey seed",survey,"trusted"
+"Visual language navigation: a survey and open challenges",2022-03-25,survey-citation,"journal survey seed",survey,"trusted; published-online date used temporarily because no arXiv preprint is confirmed yet"
+"Vision-Language Navigation with Embodied Intelligence: A Survey",2024-02-22,survey-citation,"arXiv survey candidate",survey,"withdrawn; not trusted for seeding"
+"Vision-and-Language Navigation Today and Tomorrow: A Survey in the Era of Foundation Models",2024-07-09,survey-citation,"arXiv survey seed",survey,"trusted"
+"A Survey of Embodied AI: From Simulators to Research Tasks",2021-03-08,survey-citation,"broader embodied survey",survey,"trusted secondary"
+"Foundation Models for Embodied Navigation: A Survey",2026-03-25,survey-citation,"project-page/PDF survey",survey,"trusted secondary"
+"A comprehensive review of recent advancements in vision-and-language navigation",2026-03-21,survey-citation,"journal review",survey,"trusted secondary; journal date used temporarily because no arXiv preprint is confirmed yet"
