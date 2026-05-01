@@ -143,3 +143,23 @@ This file records where papers enter the project pipeline from.
 | Habitat: A Platform for Embodied AI Research | 2019-04-16 | arxiv-search | seeded from targeted arXiv search for embodied AI platform papers repeatedly cited around VLN benchmarking | platform paper | trusted secondary |
 | Building Generalizable Agents with a Realistic and Rich 3D Environment | 2018-02-27* | awesome-repo | seeded from awesome-vln benchmark section and OpenReview-first date verification | platform paper | trusted secondary; temporary non-arXiv/OpenReview date |
 | Embodied Question Answering | 2017-11-30 | awesome-repo | seeded from awesome-vln benchmark section and arXiv-first date verification | embodied QA paper | trusted secondary |
+
+## Expansion pass: residual curated-source backfill
+
+| title | first submission date | source tag | source detail | role | trust note |
+|---|---:|---|---|---|---|
+| ReTouchdown: Adding Touchdown to StreetLearn as a Shareable Resource for Language Grounding Tasks in Street View | 2020-01-10 | awesome-repo | seeded from awesome-vln benchmarks section and arXiv-first date verification | urban benchmark paper | trusted secondary |
+| Executing Instructions in Situated Collaborative Interactions | 2019-10-08 | awesome-repo | seeded from awesome-vln guidance section and arXiv-first date verification | collaborative instruction paper | trusted secondary |
+| Shifting the Baseline: Single Modality Performance on Visual Navigation & QA | 2018-11-01 | awesome-repo | seeded from awesome-vln semantic-understanding section and arXiv-first date verification | analysis paper | trusted secondary |
+
+## Expansion pass: recent arXiv VLN additions
+
+| title | first submission date | source tag | source detail | role | trust note |
+|---|---:|---|---|---|---|
+| Vision-Language Navigation for Aerial Robots: Towards the Era of Large Language Models | 2026-04-09 | arxiv-search | seeded from targeted arXiv search for aerial VLN surveys | survey | trusted secondary |
+| Aerial Vision-Language Navigation with a Unified Framework for Spatial, Temporal and Embodied Reasoning | 2025-12-09 | arxiv-search | seeded from targeted arXiv search for recent aerial VLN methods | aerial VLN paper | trusted |
+| OpenVLN: Open-world aerial Vision-Language Navigation | 2025-11-09 | arxiv-search | seeded from targeted arXiv search for open-world aerial VLN | aerial VLN paper | trusted |
+| Vision-and-Language Navigation with Analogical Textual Descriptions in LLMs | 2025-09-29 | arxiv-search | seeded from targeted arXiv search for recent LLM-based VLN methods | LLM-era paper | trusted |
+| VLN-R1: Vision-Language Navigation via Reinforcement Fine-Tuning | 2025-06-20 | arxiv-search | seeded from targeted arXiv search for reinforcement fine-tuning in VLN | LLM-era paper | trusted |
+| VL-Nav: Real-time Vision-Language Navigation with Spatial Reasoning | 2025-02-02 | arxiv-search | seeded from targeted arXiv search for real-time VLN systems | real-world VLN paper | trusted secondary |
+| Vision-and-Language Navigation Generative Pretrained Transformer | 2024-05-27 | arxiv-search | seeded from targeted arXiv search for generative-pretrained-transformer VLN methods | LLM-era paper | trusted |
