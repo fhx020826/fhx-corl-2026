@@ -121,3 +121,15 @@ This file records where papers enter the project pipeline from.
 | Touchdown: Natural Language Navigation and Spatial Reasoning in Visual Street Environments | 2018-11-29 | awesome-repo | seeded from awesome-vln datasets and evaluation sections and arXiv-first date verification | urban benchmark paper | trusted |
 | Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation | 2018-11-25 | awesome-repo | seeded from awesome-vln reinforcement-learning list and arXiv-first date verification | reinforcement-learning paper | trusted |
 | Look Before You Leap: Bridging Model-Free and Model-Based Reinforcement Learning for Planned-Ahead Vision-and-Language Navigation | 2018-03-21 | awesome-repo | seeded from awesome-vln reinforcement-learning list and arXiv-first date verification | reinforcement-learning paper | trusted |
+
+## Expansion pass: trusted boundary and dialog backfill
+
+| title | first submission date | source tag | source detail | role | trust note |
+|---|---:|---|---|---|---|
+| NDH-Full: Learning and Evaluating Navigational Agents on Full-Length Dialogue | 2021-11-01* | awesome-repo | seeded from awesome-vln dialog section; month-level ACL publication date used temporarily because no arXiv preprint has been confirmed | dialog benchmark paper | trusted secondary; temporary non-arXiv date |
+| A Framework for Learning to Request Rich and Contextually Useful Information from Humans | 2021-10-14 | arxiv-search | seeded from targeted arXiv search for asking-for-help embodied navigation work | asking-for-help paper | trusted secondary |
+| Look Wide and Interpret Twice: Improving Performance on Interactive Instruction-following Tasks | 2021-06-01 | arxiv-search | seeded from targeted arXiv search for interactive instruction-following work | interactive instruction paper | trusted secondary |
+| A Benchmark for Interpreting Grounded Instructions for Everyday Tasks | 2019-12-03 | awesome-repo | seeded from awesome-vln benchmarks section and arXiv-first date verification | benchmark paper | trusted secondary |
+| Learning to Map Natural Language Instructions to Physical Quadcopter Control using Simulated Flight | 2019-10-21 | arxiv-search | seeded from targeted arXiv search for aerial instruction-following navigation | aerial instruction paper | trusted secondary |
+| RUN through the Streets: A New Dataset and Baseline Models for Realistic Urban Navigation | 2019-09-19 | arxiv-search | seeded from targeted arXiv search for urban and outdoor VLN resources | urban benchmark paper | trusted secondary |
+| Help, Anna! Visual Navigation with Natural Multimodal Assistance via Retrospective Curiosity-Encouraging Imitation Learning | 2019-09-04 | awesome-repo | seeded from awesome-vln guidance section and arXiv-first date verification | asking-for-help paper | trusted |
