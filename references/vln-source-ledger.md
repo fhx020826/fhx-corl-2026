@@ -83,3 +83,41 @@ This file records where papers enter the project pipeline from.
 | On Evaluation of Embodied Navigation Agents | 2018-07-18 | awesome-repo | seeded from awesome-vln evaluation list and arXiv-first date verification | evaluation paper | trusted |
 | Following High-level Navigation Instructions on a Simulated Quadcopter with Imitation Learning | 2018-05-31 | awesome-repo | seeded from awesome-vln datasets list and arXiv-first date verification | aerial precursor paper | trusted |
 | Iqa: Visual Question Answering in Interactive Environments | 2017-12-09 | awesome-repo | seeded from awesome-vln datasets list and arXiv-first date verification | embodied QA boundary paper | trusted secondary |
+
+## Expansion pass: undercovered directions backfill
+
+| title | first submission date | source tag | source detail | role | trust note |
+|---|---:|---|---|---|---|
+| LiveVLN: Breaking the Stop-and-Go Loop in Vision-Language Navigation | 2026-04-21 | arxiv-search | seeded from targeted arXiv search for recent continuous VLN work | continuous VLN paper | trusted |
+| VLNVerse: A Benchmark for Vision-Language Navigation with Versatile, Embodied, Realistic Simulation and Evaluation | 2025-12-22 | arxiv-search | seeded from targeted arXiv search for recent benchmark-era VLN work | benchmark paper | trusted |
+| JanusVLN: Decoupling Semantics and Spatiality with Dual Implicit Memory for Vision-Language Navigation | 2025-09-26 | arxiv-search | seeded from targeted arXiv search for recent memory-centric VLN work | memory paper | trusted |
+| VLN-Zero: Rapid Exploration and Cache-Enabled Neurosymbolic Vision-Language Planning for Zero-Shot Transfer in Robot Navigation | 2025-09-23 | arxiv-search | seeded from targeted arXiv search and validated with the project page | foundation-model paper | trusted |
+| StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling | 2025-07-07 | arxiv-search | seeded from targeted arXiv search for streaming and continuous VLN | continuous VLN paper | trusted |
+| MapNav: A Novel Memory Representation via Annotated Semantic Maps for Vision-and-Language Navigation | 2025-02-19 | arxiv-search | seeded from targeted arXiv search for map- and memory-based VLN | map-memory paper | trusted |
+| Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology | 2024-10-09 | arxiv-search | seeded from targeted arXiv search for UAV VLN | UAV benchmark paper | trusted |
+| Affordances-Oriented Planning using Foundation Models for Continuous Vision-Language Navigation | 2024-07-08 | arxiv-search | seeded from targeted arXiv search for continuous VLN with foundation models | foundation-model paper | trusted |
+| Target-Grounded Graph-Aware Transformer for Aerial Vision-and-Dialog Navigation | 2023-08-22 | arxiv-search | seeded from targeted arXiv search around aerial dialog navigation | aerial dialog paper | trusted |
+| Aerial Vision-and-Dialog Navigation | 2022-05-24 | awesome-repo | seeded from awesome-vln dialog section and arXiv-first date verification | aerial dialog paper | trusted |
+| History Aware Multimodal Transformer for Vision-and-Language Navigation | 2021-10-25 | awesome-repo | seeded from awesome-vln memory-augmented list and arXiv-first date verification | memory paper | trusted |
+| Rethinking the Spatial Route Prior in Vision-and-Language Navigation | 2021-10-12 | arxiv-search | seeded from targeted arXiv search for route-prior VLN work | route-prior paper | trusted |
+| Language-Aligned Waypoint (LAW) Supervision for Vision-and-Language Navigation in Continuous Environments | 2021-09-30 | arxiv-search | seeded from targeted arXiv search for continuous VLN supervision | continuous VLN paper | trusted |
+| Hierarchical Cross-Modal Agent for Robotics Vision-and-Language Navigation | 2021-04-21 | arxiv-search | seeded from awesome-vln benchmark section and arXiv-first date verification | robotics VLN paper | trusted |
+| Scene-Intuitive Agent for Remote Embodied Visual Grounding | 2021-03-24 | arxiv-search | seeded from awesome-vln remote-grounding list and arXiv-first date verification | remote grounding paper | trusted |
+| On the Evaluation of Vision-and-Language Navigation Instructions | 2021-01-26 | arxiv-search | seeded from targeted arXiv search for instruction-evaluation work | evaluation paper | trusted |
+| Language-guided Navigation via Cross-Modal Grounding and Alternate Adversarial Learning | 2020-11-22 | awesome-repo | seeded from awesome-vln representation-learning list and arXiv-first date verification | representation paper | trusted |
+| Multimodal Text Style Transfer for Outdoor Vision-and-Language Navigation | 2020-07-01 | awesome-repo | seeded from awesome-vln data-centric list and arXiv-first date verification | urban-language paper | trusted |
+| Diagnosing the Environment Bias in Vision-and-Language Navigation | 2020-05-06 | arxiv-search | seeded from targeted arXiv search for generalization and bias diagnosis work | analysis paper | trusted |
+| Sub-Instruction Aware Vision-and-Language Navigation | 2020-04-06 | arxiv-search | seeded from targeted arXiv search for fine-grained instruction supervision | instruction-granularity paper | trusted |
+| Vision-Dialog Navigation by Exploring Cross-modal Memory | 2020-03-15 | awesome-repo | seeded from awesome-vln dialog section and arXiv-first date verification | dialog paper | trusted |
+| Multi-View Learning for Vision-and-Language Navigation | 2020-03-02 | arxiv-search | seeded from targeted arXiv search for multi-view VLN learning | representation paper | trusted |
+| Perceive, transform, and act: Multi-modal attention networks for vision-and-language navigation | 2019-11-27 | awesome-repo | seeded from awesome-vln representation-learning list and arXiv-first date verification | representation paper | trusted |
+| Vision-Language Navigation with Self-Supervised Auxiliary Reasoning Tasks | 2019-11-18 | awesome-repo | seeded from awesome-vln auxiliary-tasks list and arXiv-first date verification | auxiliary-task paper | trusted |
+| Talk2Nav: Long-Range Vision-and-Language Navigation with Dual Attention and Spatial Memory | 2019-10-04 | awesome-repo | seeded from awesome-vln datasets section and arXiv-first date verification | urban navigation paper | trusted |
+| Transferable Representation Learning in Vision-and-Language Navigation | 2019-08-09 | awesome-repo | seeded from awesome-vln representation-learning list and arXiv-first date verification | representation paper | trusted |
+| Multi-modal Discriminative Model for Vision-and-Language Navigation | 2019-05-31 | awesome-repo | seeded from awesome-vln representation-learning list and arXiv-first date verification | representation paper | trusted |
+| Stay on the Path: Instruction Fidelity in Vision-and-Language Navigation | 2019-05-29 | awesome-repo | seeded from awesome-vln datasets and evaluation sections and arXiv-first date verification | evaluation paper | trusted |
+| Embodied Multimodal Multitask Learning | 2019-02-04 | arxiv-search | seeded from targeted arXiv search for multitask embodied navigation work | multitask paper | trusted secondary |
+| From language to goals: Inverse reinforcement learning for vision-based instruction following | 2019-02-20 | awesome-repo | seeded from awesome-vln reinforcement-learning list and arXiv-first date verification | reinforcement-learning paper | trusted |
+| Touchdown: Natural Language Navigation and Spatial Reasoning in Visual Street Environments | 2018-11-29 | awesome-repo | seeded from awesome-vln datasets and evaluation sections and arXiv-first date verification | urban benchmark paper | trusted |
+| Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation | 2018-11-25 | awesome-repo | seeded from awesome-vln reinforcement-learning list and arXiv-first date verification | reinforcement-learning paper | trusted |
+| Look Before You Leap: Bridging Model-Free and Model-Based Reinforcement Learning for Planned-Ahead Vision-and-Language Navigation | 2018-03-21 | awesome-repo | seeded from awesome-vln reinforcement-learning list and arXiv-first date verification | reinforcement-learning paper | trusted |
