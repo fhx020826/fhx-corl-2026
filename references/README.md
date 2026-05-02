@@ -1,11 +1,12 @@
 # References
 
-This directory is reserved for curated reference artifacts only.
+This directory now keeps only the cleaned literature deliverables.
 
-Planned contents:
-- bibliographies
-- paper inventories
-- comparison tables
-- curated metadata exports
+Primary files:
+- `vln-paper-list-final-strict.md`
+- `vln-paper-list-final-strict.tsv`
+- `vln-paper-list-final-strict.csv`
 
-Do not store large raw PDF collections in git.
+These three files are the final VLN paper-list deliverables.
+
+Do not reintroduce outdated working corpora or large raw PDF collections here.

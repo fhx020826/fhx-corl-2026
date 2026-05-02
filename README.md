@@ -1,28 +1,26 @@
 # fhx-corl-2026
 
-Preparation workspace for a two-stage VLN research program:
+VLN research workspace with a cleaned final literature deliverable.
 
-1. a comprehensive VLN survey targeting IEEE
-2. a new VLN method paper targeting CoRL
+## Final deliverables
 
-Current status: preparation only. No literature collection, analysis, model development, or experiments have started yet.
+- strict final VLN paper list in Markdown:
+  - [`references/vln-paper-list-final-strict.md`](references/vln-paper-list-final-strict.md)
+- strict final VLN paper list in TSV for direct Feishu paste:
+  - [`references/vln-paper-list-final-strict.tsv`](references/vln-paper-list-final-strict.tsv)
+- strict final VLN paper list in CSV:
+  - [`references/vln-paper-list-final-strict.csv`](references/vln-paper-list-final-strict.csv)
+- final completeness audit:
+  - [`docs/VLN_FINAL_COMPLETENESS_AUDIT.md`](docs/VLN_FINAL_COMPLETENESS_AUDIT.md)
 
-## Working defaults
+## Supporting note
 
-- English is the default language for notes and writing.
-- This repository is the canonical project workspace.
-- Keep only reproducible core files in git.
-- Use the configured proxy before external network operations.
-- Treat the current machine as an HPC login node unless a compute allocation is active.
+- survey-of-surveys scoping note:
+  - [`docs/VLN_SURVEY_OF_SURVEYS.md`](docs/VLN_SURVEY_OF_SURVEYS.md)
 
-## Planned repository layout
+## Scope
 
-- `docs/` — plans, process notes, decision records
-- `references/` — bibliographies and curated reference metadata
-- `survey-paper/` — survey manuscript assets and outlines
-- `corl-paper/` — method paper assets and outlines
-- `experiments/` — reproducible experiment configs and scripts
-
-## First artifact
-
-The initial project plan is in [`docs/VLN_RESEARCH_MASTER_PLAN.md`](docs/VLN_RESEARCH_MASTER_PLAN.md).
+- the strict final list is the primary deliverable
+- it is ordered from newest to oldest by first submission date
+- it preserves `*` for provisional dates that still need external normalization
+- it excludes obvious non-VLN boundary papers from the final table
