@@ -163,3 +163,95 @@ This file records where papers enter the project pipeline from.
 | VLN-R1: Vision-Language Navigation via Reinforcement Fine-Tuning | 2025-06-20 | arxiv-search | seeded from targeted arXiv search for reinforcement fine-tuning in VLN | LLM-era paper | trusted |
 | VL-Nav: Real-time Vision-Language Navigation with Spatial Reasoning | 2025-02-02 | arxiv-search | seeded from targeted arXiv search for real-time VLN systems | real-world VLN paper | trusted secondary |
 | Vision-and-Language Navigation Generative Pretrained Transformer | 2024-05-27 | arxiv-search | seeded from targeted arXiv search for generative-pretrained-transformer VLN methods | LLM-era paper | trusted |
+
+## Expansion pass: systematic direct-title arXiv sweep
+
+| title | first submission date | source tag | source detail | role | trust note |
+|---|---:|---|---|---|---|
+| A Deployable Embodied Vision-Language Navigation System with Hierarchical Cognition and Context-Aware Exploration | 2026-04-23 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | real world vln paper | trusted |
+| DeCoNav: Dialog enhanced Long-Horizon Collaborative Vision-Language Navigation | 2026-04-14 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | dialog paper | trusted |
+| Stop Wandering: Efficient Vision-Language Navigation via Metacognitive Reasoning | 2026-04-02 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| Structured Observation Language for Efficient and Generalizable Vision-Language Navigation | 2026-03-29 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| DyGeoVLN: Infusing Dynamic Geometry Foundation Model into Vision-Language Navigation | 2026-03-22 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | foundation model paper | trusted |
+| Does Peer Observation Help? Vision-Sharing Collaboration for Vision-Language Navigation | 2026-03-21 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | collaborative vln paper | trusted |
+| Trajectory-Diversity-Driven Robust Vision-and-Language Navigation | 2026-03-16 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency | 2026-03-11 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | aerial vln paper | trusted |
+| Let's Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments | 2026-03-10 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| ViSA-Enhanced Aerial VLN: A Visual-Spatial Reasoning Enhanced Framework for Aerial Vision-Language Navigation | 2026-03-09 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | aerial vln paper | trusted |
+| PROSPECT: Unified Streaming Vision-Language Navigation via Semantic--Spatial Fusion and Latent Predictive Representation | 2026-03-04 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| TagaVLM: Topology-Aware Global Action Reasoning for Vision-Language Navigation | 2026-03-03 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| Learning to Retrieve Navigable Candidates for Efficient Vision-and-Language Navigation | 2026-02-17 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| pFedNavi: Structure-Aware Personalized Federated Vision-Language Navigation for Embodied AI | 2026-02-16 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | federated vln paper | trusted |
+| LCLA: Language-Conditioned Latent Alignment for Vision-Language Navigation | 2026-02-07 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| MapDream: Task-Driven Map Learning for Vision-Language Navigation | 2026-01-30 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | map memory paper | trusted |
+| Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation | 2026-01-29 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| ETP-R1: Evolving Topological Planning with Reinforcement Fine-tuning for Vision-Language Navigation in Continuous Environments | 2025-12-24 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| Embodied4C: Measuring What Matters for Embodied Vision-Language Navigation | 2025-12-19 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | evaluation paper | trusted |
+| Efficient-VLN: A Training-Efficient Vision-Language Navigation Model | 2025-12-11 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| MDE-AgriVLN: Agricultural Vision-and-Language Navigation with Monocular Depth Estimation | 2025-12-03 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | agricultural vln paper | trusted secondary |
+| LaViRA: Language-Vision-Robot Actions Translation for Zero-Shot Vision Language Navigation in Continuous Environments | 2025-10-22 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| SUM-AgriVLN: Spatial Understanding Memory for Agricultural Vision-and-Language Navigation | 2025-10-16 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | agricultural vln paper | trusted secondary |
+| Disentangling Foreground and Background for vision-Language Navigation via Online Augmentation | 2025-10-01 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | data centric paper | trusted |
+| Landmark-Guided Knowledge for Vision-and-Language Navigation | 2025-09-30 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| Learning Goal-Oriented Vision-and-Language Navigation with Self-Improving Demonstrations at Scale | 2025-09-29 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | goal oriented vln paper | trusted |
+| Boosting Zero-Shot VLN via Abstract Obstacle Map-Based Waypoint Prediction with TopoGraph-and-VisitInfo-Aware Prompting | 2025-09-24 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | zero shot vln paper | trusted |
+| AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation | 2025-08-21 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | aerial vln paper | trusted |
+| DAgger Diffusion Navigation: DAgger Boosted Diffusion Policy for Vision-Language Navigation | 2025-08-13 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| AgriVLN: Vision-and-Language Navigation for Agricultural Robots | 2025-08-10 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | agricultural vln paper | trusted secondary |
+| MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming | 2025-08-04 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| View Invariant Learning for Vision-Language Navigation in Continuous Environments | 2025-07-05 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| Generating Vision-Language Navigation Instructions Incorporated Fine-Grained Alignment Annotations | 2025-06-10 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | data centric paper | trusted |
+| Active Test-time Vision-Language Navigation | 2025-06-07 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | test time adaptation paper | trusted |
+| EvolveNav: Empowering LLM-Based Vision-Language Navigation via Self-Improving Embodied Reasoning | 2025-06-02 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | llm era paper | trusted |
+| Unseen from Seen: Rewriting Observation-Instruction Using Foundation Models for Augmenting Vision-Language Navigation | 2025-03-23 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | data centric paper | trusted |
+| Do Visual Imaginations Improve Vision-and-Language Navigation Agents? | 2025-03-20 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | analysis paper | trusted |
+| Fine-Grained Instruction-Guided Graph Reasoning for Vision-and-Language Navigation | 2025-03-14 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | graph paper | trusted |
+| PanoGen++: Domain-Adapted Text-Guided Panoramic Environment Generation for Vision-and-Language Navigation | 2025-03-13 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | data centric paper | trusted |
+| Openfly: A comprehensive platform for aerial vision-language navigation | 2025-02-25 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | aerial vln paper | trusted secondary |
+| General Scene Adaptation for Vision-and-Language Navigation | 2025-01-29 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | generalization paper | trusted |
+| Constraint-Aware Zero-Shot Vision-Language Navigation in Continuous Environments | 2024-12-13 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| doScenes: An Autonomous Driving Dataset with Natural Language Instruction for Human Interaction and Vision-Language Navigation | 2024-12-08 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | outdoor benchmark paper | trusted secondary |
+| UnitedVLN: Generalizable Gaussian Splatting for Continuous Vision-Language Navigation | 2024-11-25 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| Fine-Grained Alignment in Vision-and-Language Navigation through Bayesian Optimization | 2024-11-22 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| Vision-Language Navigation with Energy-Based Policy | 2024-10-18 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| Exploring Spatial Representation to Enhance LLM Reasoning in Aerial Vision-Language Navigation | 2024-10-11 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | aerial vln paper | trusted |
+| Navigating the Nuances: A Fine-grained Evaluation of Vision-Language Navigation | 2024-09-25 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | evaluation paper | trusted |
+| Seeing is Believing? Enhancing Vision-Language Navigation using Visual Perturbations | 2024-09-09 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | generalization paper | trusted |
+| Vision-Language Navigation with Continual Learning | 2024-09-04 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continual learning paper | trusted |
+| Cog-GA: A Large Language Models-based Generative Agent for Vision-Language Navigation in Continuous Environments | 2024-09-04 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | llm era paper | trusted |
+| Loc4Plan: Locating Before Planning for Outdoor Vision and Language Navigation | 2024-08-09 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | outdoor vln paper | trusted |
+| PRET: Planning with Directed Fidelity Trajectory for Vision and Language Navigation | 2024-07-16 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| Why Only Text: Empowering Vision-and-Language Navigation with Multi-modal Prompts | 2024-06-04 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | llm era paper | trusted |
+| Correctable Landmark Discovery via Large Models for Vision-Language Navigation | 2024-05-29 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | llm era paper | trusted |
+| Vision-and-Language Navigation via Causal Learning | 2024-04-16 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| Continual Vision-and-Language Navigation | 2024-03-22 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continual learning paper | trusted |
+| Volumetric Environment Representation for Vision-Language Navigation | 2024-03-21 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | world model paper | trusted |
+| Hierarchical Spatial Proximity Reasoning for Vision-and-Language Navigation | 2024-03-18 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| VLN-Video: Utilizing Driving Videos for Outdoor Vision-and-Language Navigation | 2024-02-05 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | outdoor vln paper | trusted |
+| NavHint: Vision and Language Navigation Agent with a Hint Generator | 2024-02-04 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| WebVLN: Vision-and-Language Navigation on Websites | 2023-12-25 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | web vln paper | trusted secondary |
+| DREAMWALKER: Mental Planning for Continuous Vision-Language Navigation | 2023-08-14 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| Bird's-Eye-View Scene Graph for Vision-Language Navigation | 2023-08-09 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | graph paper | trusted |
+| Scaling Data Generation in Vision-and-Language Navigation | 2023-07-28 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | data centric paper | trusted |
+| GridMM: Grid Memory Map for Vision-and-Language Navigation | 2023-07-24 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | map memory paper | trusted |
+| Learning Vision-and-Language Navigation from YouTube Videos | 2023-07-22 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | data centric paper | trusted |
+| Behavioral Analysis of Vision-and-Language Navigation Agents | 2023-07-20 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | analysis paper | trusted |
+| Masked Path Modeling for Vision-and-Language Navigation | 2023-05-23 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | pretraining paper | trusted |
+| ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments | 2023-04-06 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| Actional Atomic-Concept Learning for Demystifying Vision-Language Navigation | 2023-02-13 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | analysis paper | trusted |
+| CLIP-Nav: Using CLIP for Zero-Shot Vision-and-Language Navigation | 2022-11-30 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | zero shot vln paper | trusted |
+| ULN: Towards Underspecified Vision-and-Language Navigation | 2022-10-18 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | instruction granularity paper | trusted |
+| Iterative Vision-and-Language Navigation | 2022-10-06 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continual learning paper | trusted |
+| Anticipating the Unseen Discrepancy for Vision and Language Navigation | 2022-09-10 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | generalization paper | trusted |
+| Target-Driven Structured Transformer Planner for Vision-Language Navigation | 2022-07-19 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | planning paper | trusted |
+| ADAPT: Vision-Language Navigation with Modality-Aligned Action Prompts | 2022-05-31 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | direct vln paper | trusted |
+| Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous Environments | 2022-04-20 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | continuous vln paper | trusted |
+| FedVLN: Privacy-preserving Federated Vision-and-Language Navigation | 2022-03-28 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | federated vln paper | trusted |
+| Analyzing Generalization of Vision and Language Navigation to Unseen Outdoor Areas | 2022-03-25 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | outdoor vln paper | trusted |
+| HOP: History-and-Order Aware Pre-training for Vision-and-Language Navigation | 2022-03-22 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | pretraining paper | trusted |
+| Cross-modal Map Learning for Vision and Language Navigation | 2022-03-10 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | map memory paper | trusted |
+| A Dataset for Interactive Vision-Language Navigation with Unknown Command Feasibility | 2022-02-04 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | benchmark paper | trusted secondary |
+| Contrastive Instruction-Trajectory Learning for Vision-Language Navigation | 2021-12-08 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | pretraining paper | trusted |
+| Structured Scene Memory for Vision-Language Navigation | 2021-03-05 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | memory paper | trusted |
+| Sim-to-Real Transfer for Vision-and-Language Navigation | 2020-11-07 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | real world vln paper | trusted |
+| VALAN: Vision and Language Agent Navigation | 2019-12-06 | arxiv-search | seeded from systematic arXiv sweep for direct VLN titles | framework paper | trusted secondary |
